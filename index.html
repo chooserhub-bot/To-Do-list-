@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Todo App</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- GSAP -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+</head>
+<body>
+
+<div id="parallax">
+   <img src="bg 1.jpg" class="layer l1">
+   <img src="bg 2.jpg" class="layer l2">
+</div>
+
+<div class="app">
+   <h1>Tasks</h1>
+
+   <div class="input-row">
+      <input type="text" id="task-input" placeholder="Add task...">
+      <button id="add-btn">+</button>
+   </div>
+
+   <ul id="task-list"></ul>
+</div>
+
+<!-- Celebration Modal -->
+<div id="modal-overlay"></div>
+
+<div id="modal-box">
+   <h2>🎉 Congratulations 🎉</h2>
+   <p>You completed all tasks!</p>
+   <button id="close-modal">OK</button>
+</div>
+
+<audio id="bell" src="bell.mp3"></audio>
+
+<script src="confetti.min.js"></script>
+<script src="fireworks.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
